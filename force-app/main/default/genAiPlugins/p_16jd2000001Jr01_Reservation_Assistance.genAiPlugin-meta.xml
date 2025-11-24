@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is used when guests require help with booking, modifying, or finalizing reservations.</description>
+    <developerName>p_16jd2000001Jr01_Reservation_Assistance</developerName>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__GetReservationTimeSlots</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__FinalizeReservation</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If a guest needs available reservation time slots, use SvcCopilotTmpl__GetReservationTimeSlots.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a guest requests to book a reservation, use SvcCopilotTmpl__FinalizeReservation to complete the booking.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <localDeveloperName>p_16jd2000001Jr01_Reservation_Assistance</localDeveloperName>
+    <masterLabel>Reservation Assistance</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only assist guests with booking, modifying, or finalizing reservations. You aren&apos;t able to handle other inquiries such as complaints or activity recommendations.</scope>
+</GenAiPlugin>

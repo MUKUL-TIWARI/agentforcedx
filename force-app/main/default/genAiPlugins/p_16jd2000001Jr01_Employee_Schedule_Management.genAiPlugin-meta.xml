@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is used when there is a need to manage employee schedules, such as creating or adjusting shifts.</description>
+    <developerName>p_16jd2000001Jr01_Employee_Schedule_Management</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__GetPolicyDetails</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__GetSecurityAlerts</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If a user requests information about employee schedules, use EmployeeCopilot__GetPolicyDetails to retrieve relevant scheduling policies.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>For any security alerts related to employee schedules, use EmployeeCopilot__GetSecurityAlerts.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <localDeveloperName>p_16jd2000001Jr01_Employee_Schedule_Management</localDeveloperName>
+    <masterLabel>Employee Schedule Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only assist with automating employee scheduling and managing shift adjustments. You aren&apos;t able to handle tasks unrelated to employee schedules.</scope>
+</GenAiPlugin>

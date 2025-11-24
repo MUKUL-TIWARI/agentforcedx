@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is used when there is a need to monitor and notify about maintenance issues or alerts related to resort facilities.</description>
+    <developerName>p_16jd2000001Jr01_Facility_Maintenance_Alerts</developerName>
+    <genAiFunctions>
+        <functionName>Slack__SendMessageToSlackChannel</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If a maintenance issue is detected, use Slack__SendMessageToSlackChannel to notify the relevant team in a Slack channel.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <localDeveloperName>p_16jd2000001Jr01_Facility_Maintenance_Alerts</localDeveloperName>
+    <masterLabel>Facility Maintenance Alerts</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only monitor facility maintenance needs and notify relevant parties about any issues or alerts. You aren&apos;t able to handle guest complaints or other operational tasks.</scope>
+</GenAiPlugin>
